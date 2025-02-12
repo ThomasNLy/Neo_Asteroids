@@ -120,7 +120,8 @@ function draw() {
 
 					bullets[j].reflect(asteroids[i].shield);
 					asteroids[i].shield.health--;
-				} else if (bullets[j].collision(asteroids[i].hitbox)) {
+				} 
+        else if (bullets[j].collision(asteroids[i].hitbox)) {
 					if (asteroids[i].type === Asteroid.EXPLOSIVETYPE) {
 						let destroyedAsteroidXCoord = asteroids[i].x;
 						let destroyedAsteroidYCoord = asteroids[i].y;
